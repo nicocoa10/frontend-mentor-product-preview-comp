@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    /* font-family: 'Fraunces', serif; */
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 377px;
+}
+
+.card-container {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+
+}
+
+.card {
+    background-color: white;
+    /* border: 1px solid red; */
+    border-radius: 15px;
+    padding-bottom: 1rem;
+
+}
+
+.img {
+    content: url("../images/image-product-mobile.jpg");
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+
+}
+
+.card-content {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.category-title {
+    letter-spacing: .5rem;
+    font-size: 14px;
+    color: hsl(212, 21%, 14%);
+}
+
+.title {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 1.4rem;
+    margin-top: -1.2rem;
+    line-height: 2rem;
+}
+
+.subtitle {
+    color: hsl(228, 12%, 48%);
+    line-height: 1.5rem;
+}
+
+.price-section {
+    display: flex;
+    align-items: center;
+}
+
+.price+.price {
+    margin-left: 8px;
+}
+
+.new-price {
+    font-family: 'Fraunces', serif;
+    font-size: 2.3rem;
+    font-weight: 900;
+    color: hsl(158, 36%, 37%);
+}
+
+.old-price {
+    font-size: 14px;
+}
+
+button {
+    border: none;
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem 0;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: hsl(157, 36%, 23%);
+}
+
+@media (min-width: 900px) {
+    .container {
+        max-width: 700px;
+    }
+
+    .card {
+        display: flex;
+        padding-bottom: 0;
+        gap: 3rem;
+    }
+
+    .img {
+        content: url("../images/image-product-desktop.jpg");
+        border-top-right-radius: 0;
+        height: 100%;
+
+    }
+
+    .card-content {
+        margin: 0 auto;
+        /* border: 1px solid red; */
+        padding-right: 3rem;
+        padding-top: 2.5rem;
+    }
+
+
+}
